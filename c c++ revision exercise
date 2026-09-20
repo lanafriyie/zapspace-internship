@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x;
+    cout << "Enter a number between 0 to 100: ";
+    cin >> x;
+
+    if (x >= 0 && x <= 30) {
+        cout << "Your status sensor: " << x << " and the status is SAFE" << endl;
+    }
+    else if (x > 30 && x <= 60) {
+        cout << "Your status sensor: " << x << " and the status is NORMAL" << endl;
+    }
+    else if (x > 60 && x <= 80) {
+        cout << "Your status sensor: " << x << " and the status is WARNING" << endl;
+    }
+    else if (x > 80 && x <= 100) {
+        cout << "Your status sensor: " << x << " and the status is CRITICAL" << endl;
+    }
+    else {
+        cout << "Invalid input. Please enter a number between 0 to 100." << endl;
+    }
+
+    return 0;
+}
